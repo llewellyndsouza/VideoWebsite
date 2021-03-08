@@ -1,0 +1,37 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content nav";
+  grid-template-rows: auto auto;
+  grid-template-columns: 7fr 3fr ;
+  background-color: rgb(127, 255, 212);
+}
+
+header {
+  background-color: rgb(236, 188, 212);
+  grid-area: header;
+  height: auto;
+}
+
+.content {
+  background-color: rgb(181, 243, 169);
+  grid-area: content;
+  padding: 10px;
+}
+
+nav {
+  background-color: rgb(240, 230, 140);
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.suggestVideo {
+  background-color: lightcoral;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 5px;
+  
+}
